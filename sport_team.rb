@@ -17,6 +17,8 @@ def player_exists(player)
   for person in @players
     if person == player
       return true
+    else
+      return false
     end
   end
 end

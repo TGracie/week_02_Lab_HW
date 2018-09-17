@@ -32,9 +32,15 @@ def test_add_new_player
   assert_equal(["George Bovril", "Frank Lampshade", "Billy Footstool"], sportsball.players)
 end
 
-def test_player_exists
+def test_player_exists_true
   sportsball = SportTeam.new("Peter Marbles", "Twickenham Twiddlers", ["George Bovril", "Frank Lampshade"], 69)
   assert_equal(true, sportsball.player_exists("George Bovril"))
+
+end
+
+def test_player_exists_false
+  sportsball = SportTeam.new("Peter Marbles", "Twickenham Twiddlers", ["George Bovril", "Frank Lampshade"], 69)
+  assert_equal(false, sportsball.player_exists("Garry Barnett"))
 
 end
 
