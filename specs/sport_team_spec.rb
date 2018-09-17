@@ -20,9 +20,12 @@ def test_get_coach
   assert_equal("Peter Marbles", sportsball.coach)
 end
 
-# def test_update_coach
-# end
-#
+def test_update_coach
+  sportsball = SportTeam.new("Peter Marbles", "Twickenham Twiddlers", ["George Bovril", "Frank Lampshade"], 69)
+  sportsball.coach = "Barry Castors"
+  assert_equal("Barry Castors", sportsball.coach)
+end
+
 # def test_add_new_player
 # end
 #
