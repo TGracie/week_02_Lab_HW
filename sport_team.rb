@@ -11,4 +11,14 @@ def initialize(input_coach, input_team, input_players, input_points)
   @points = input_points
 end
 
+
+
+def player_exists(player)
+  for person in @players
+    if person == player
+      return true
+    end
+  end
+end
+
 end
