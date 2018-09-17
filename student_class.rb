@@ -17,4 +17,8 @@ def talking
   return "I like turtles"
 end
 
+def favlang
+  return "My favourite language is #{@language}"
+end
+
 end
