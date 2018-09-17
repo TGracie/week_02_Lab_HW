@@ -15,9 +15,12 @@ def test_student_cohort
   assert_equal("Thomas", student2.name)
 end
 
-# def test_update_details
-# end
-#
+def test_update_details
+  student2 = Student.new("Thomas", "E25", "Ruby")
+  student2.name = "Billy-Bob Groat"
+  assert_equal("Billy-Bob Groat", student2.name)
+end
+
 # def test_student_talking
 # end
 
