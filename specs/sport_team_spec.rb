@@ -10,8 +10,10 @@ def test_get_team_name
   assert_equal("Twickenham Twiddlers", sportsball.team)
 end
 
-# def test_get_players
-# end
+def test_get_players
+  sportsball = SportTeam.new("Peter Marbles", "Twickenham Twiddlers", ["George Bovril", "Frank Lampshade"], 69)
+  assert_equal(["George Bovril", "Frank Lampshade"], sportsball.players)
+end
 #
 # def test_get_coach
 # end
