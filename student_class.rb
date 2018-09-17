@@ -13,9 +13,8 @@ def print_details
   puts "My name is #{@name} and I'm in Cohort #{@cohort}"
 end
 
-
-def favourite_language
-  puts ""
+def talking
+  return "I like turtles"
 end
 
 end
